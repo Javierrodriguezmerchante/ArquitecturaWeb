@@ -40,59 +40,80 @@
       </tbody>
     </table>
 
-    <div>
+    <div style="margin-top:15px;">
       <div style="width:40%;float:left">
-
-    <form action="">
-      <table>
-        <tr colspan="2"><font size="big">B&uacute;squeda de viajes</font></tr>
-        <tr>
-          <td>
-            <label for="origen">Origen: </label>
-            <input type="text" id="origen" />
-          </td>
-          <td>
-        <label for="destino">Destino: </label>
-        <input type="text" id="destino" />
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <label for="fecha_ida">Fecha ida: </label>
-        <input type="text" id="fecha_ida" /></td><td>
-        <label for="fecha_vuelta">Fecha vuelta: </label>
-        <input type="text" id="fecha_vuelta" />
-        <label for="solo_ida">Solo ida</label>
-        <input type="checkbox" id="solo_ida" onchange="vuelta(this)" /></td>
-      </tr><tr>
-        <td>
-        <label for="adultos">Adultos: </label>
-        <select id="adultos">
-          <option>1</option>
-          <option>2</option>
-          <option>3</option>
-          <option>4</option>
-          <option>5</option>
-        </select></td><td>
-        <label for="ninos">Ninos: </label>
-        <select id="ninos">
-          <option>1</option>
-          <option>2</option>
-          <option>3</option>
-          <option>4</option>
-          <option>5</option>
-        </select></td>
-      </tr>
-      <tr><td colspan="2"><label for="codigo">C&oacute;digo promocional: </label>
-      <input type="text" id="codigo" /></td></tr>
-      <tr><td colspan="2"><button>Busca</button></td></tr>
-    </table>
-    </form>
-
-  </div>
-  <div style="width:60%;float:left">
-    <img src="img/descuento.jpg" alt="Descuentos" /></div>
-  </div>
+        <div style="width:100%;">
+          <form action="">
+            <table>
+              <tr colspan="2"><font size="6"><b>B&uacute;squeda de viajes</b></font></tr>
+              <tr>
+                <td>
+                  <label for="origen">Origen: </label>
+                  <input type="text" id="origen" />
+                </td>
+                <td>
+              <label for="destino">Destino: </label>
+              <input type="text" id="destino" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="fecha_ida">Fecha ida: </label>
+              <input type="text" id="fecha_ida" /></td><td>
+              <label for="fecha_vuelta">Fecha vuelta: </label>
+              <input type="text" id="fecha_vuelta" />
+              <label for="solo_ida">Solo ida</label>
+              <input type="checkbox" id="solo_ida" onchange="vuelta(this)" /></td>
+            </tr><tr>
+              <td>
+              <label for="adultos">Adultos: </label>
+              <select id="adultos">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select></td><td>
+              <label for="ninos">Ninos: </label>
+              <select id="ninos">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select></td>
+            </tr>
+            <tr><td colspan="2"><label for="codigo">C&oacute;digo promocional: </label>
+            <input type="text" id="codigo" /><button>Busca</button></td></tr>
+          </table>
+          </form>
+        </div>
+        <table style="margin-top:15px;">
+          <tr><td colspan="2"><font size="6"><b>Destinos favoritos</b></font></td></tr>
+          <tr>
+            <td><img src="img/destinos_madrid.jpg" /></td>
+            <td><font size="5">Madrid</font><br>
+              Conoce Madrid desde todos sus puntos de vista: el deporte, las fiestas, la navidad, lo que puedes hacer si nos visitas, las propuestas m&aacute;s desenfadadas, ...
+            </td>
+          </tr>
+          <tr>
+            <td><img src="img/destinos_amsterdam.jpg" /></td>
+            <td><font size="5">Amsterdam</font><br>
+              Descubre Amsterdam y no te pierdas nada de la capital del Holanda. Te contamos lo que debes ver y visitar en tu viaje. Amsterdam te est&aacute; esperando!
+            </td>
+          </tr>
+          <tr>
+            <td><img src="img/destinos_lisboa.jpg" /></td>
+            <td><font size="5">Lisboa</font><br>
+              Conoce qu&eacute; ver y visitar en Lisboa y sus alrededores, en Portugal, con visitas recomendadas para tu viaje.
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div style="width:60%;float:left">
+        <img src="img/descuento.jpg" alt="Descuentos" />
+      </div>
+    </div>
   </body>
 
 </html>
