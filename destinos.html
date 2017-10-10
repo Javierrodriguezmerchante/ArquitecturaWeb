@@ -1,0 +1,98 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type" />
+    <title>BarchinoViajes</title>
+    <script type="text/javascript">
+      function vuelta(e) {
+          document.getElementById('fecha_vuelta').disabled = e.checked;
+      }
+    </script>
+  </head>
+  <body style="margin: auto; max-width: 1500px;">
+
+    <table style="text-align: left; width: 1557px; height: 281px;" border="0" cellpadding="2" cellspacing="2">
+      <tbody>
+        <tr style="font-family: HP Simplified; font-weight: bold; font-style: italic; color: rgb(76, 11, 95);" align="center">
+          <td style="width: 199px;" colspan="11" rowspan="1"><big style="font-weight: bold; font-style: italic;"><big><big><big><big>BarchinoViajes</big></big></big></big></big></td>
+        </tr>
+
+
+        <tr>
+          <td style="width: 199px;" colspan="11" rowspan="1"><img style="width: 824px; height: 171px;" alt="travel" src="img/Travel.png"/><img style="width: 710px; height: 171px;" alt="travel" src="img/Travel.png"/></td>
+        </tr>
+
+
+        <tr>
+          <td style="border: 2px solid rgb(76, 11, 95); text-align: center; height: 15px; width: 90px;"><a href="./index.xhtml">Home</a></td>
+          <td style="border: 2px solid rgb(76, 11, 95); text-align: center; height: 15px; width: 168px;">Alquiler de Coches</td>
+          <td style="border: 2px solid rgb(76, 11, 95); text-align: center; height: 15px; width: 160px;">&Uacute;ltima hora / Ofertas</td>
+          <td style="border: 2px solid rgb(76, 11, 95); text-align: center; height: 15px; width: 121px;"><a href="./Apartamento/Apartamento.xhtml">Apartamentos</a></td>
+          <td style="border: 2px solid rgb(76, 11, 95); text-align: center; height: 15px; width: 116px;"><a href="./hoteles/hoteles.xhtml">Hoteles</a></td>
+          <td style="border: 2px solid rgb(76, 11, 95); text-align: center; height: 15px; width: 105px;">Trenes</td>
+          <td style="border: 2px solid rgb(76, 11, 95); text-align: center; height: 15px; width: 114px;">Cruceros</td>
+          <td style="border: 2px solid rgb(76, 11, 95); text-align: center; height: 15px; width: 199px;"><a href="./historiaCompania/historiaCompania.xhtml">Historia de la compa&ntilde;ia</a></td>
+          <td style="border: 2px solid rgb(76, 11, 95); text-align: center; width: 150px; height: 15px;"><a href="./seguros/seguros.html">Seguros de Viajes</a></td>
+          <td style="border: 2px solid rgb(76, 11, 95); text-align: center; width: 133px; height: 15px;">Acerca de...</td>
+          <td style="border: 2px solid rgb(76, 11, 95); text-align: center; width: 134px; height: 15px;">Contacto</td>
+        </tr>
+
+      </tbody>
+    </table>
+
+    <div>
+      <div style="width:40%;float:left">
+
+    <form action="">
+      <table>
+        <tr colspan="2"><font size="big">B&uacute;squeda de viajes</font></tr>
+        <tr>
+          <td>
+            <label for="origen">Origen: </label>
+            <input type="text" id="origen" />
+          </td>
+          <td>
+        <label for="destino">Destino: </label>
+        <input type="text" id="destino" />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <label for="fecha_ida">Fecha ida: </label>
+        <input type="text" id="fecha_ida" /></td><td>
+        <label for="fecha_vuelta">Fecha vuelta: </label>
+        <input type="text" id="fecha_vuelta" />
+        <label for="solo_ida">Solo ida</label>
+        <input type="checkbox" id="solo_ida" onchange="vuelta(this)" /></td>
+      </tr><tr>
+        <td>
+        <label for="adultos">Adultos: </label>
+        <select id="adultos">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+        </select></td><td>
+        <label for="ninos">Ninos: </label>
+        <select id="ninos">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+        </select></td>
+      </tr>
+      <tr><td colspan="2"><label for="codigo">C&oacute;digo promocional: </label>
+      <input type="text" id="codigo" /></td></tr>
+      <tr><td colspan="2"><button>Busca</button></td></tr>
+    </table>
+    </form>
+
+  </div>
+  <div style="width:60%;float:left">
+    <img src="img/descuento.jpg" alt="Descuentos" /></div>
+  </div>
+  </body>
+
+</html>
