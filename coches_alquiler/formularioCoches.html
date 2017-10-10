@@ -37,21 +37,56 @@
       </tbody>
     </table>
     <H2>FORMULARIO DE CONTACTO</H2>
-    <FORM NAME="formulario" METHOD=POST ACTION="mailto:usuario@yahoo.es">
-      <p>
-        <LABEL for="firstname">Nombre: </LABEL><BR>
-                  <INPUT type="text" id="firstname"><BR>
-        <LABEL for="lastname">Apellido: </LABEL><BR>
-                  <INPUT type="text" id="lastname"><BR>
-        <LABEL for="email">Email: </LABEL><BR>
-                  <INPUT type="text" id="email"><BR><BR>
-        <INPUT type="radio" name="sex" value="Male">Masculino<BR>
-        <INPUT type="radio" name="sex" value="Female">Femenino<BR>
-        <LABEL for="textArea">Escribir: </LABEL><BR>
-        <TEXTAREA rows="6" cols="30" id="textArea"></TEXTAREA><BR><BR>
-        <INPUT type="submit" value="ENVIAR"> <INPUT type="reset">
-        </p>
-     </FORM>
+    <form method="post" action="mailto:mi@correo.com" name="contrata">
+      <table border="0">
+
+        <tbody>
+
+          <tr>
+
+            <td>Nombre:</td>
+
+            <td><input name="Nombre" type="text"></td>
+
+          </tr>
+
+          <tr>
+
+            <td>Apellidos:</td>
+
+            <td><input name="Apellidos" type="text"></td>
+
+          </tr>
+
+          <tr>
+
+            <td>G&eacute;nero</td>
+
+            <td>Hombre:<input name="g&eacute;nero" value="Masculino" type="radio"> <br>
+
+Mujer: <input name="g&eacute;nero" value="Femenino" type="radio">
+            </td>
+
+          </tr>
+
+
+          <tr>
+
+            <td>Dudas:</td>
+
+            <td><textarea cols="20" rows="10" name="Dudas"></textarea></td>
+
+          </tr>
+          <tr>
+
+            <td> <input value="Enviar" type="submit"></td>
+
+          </tr>
+
+        </tbody>
+      </table>
+
+    </form>
      <H3><A HREF="indexCoches.html">Atrás</A></H3>
    </BODY>
 </HTML>
