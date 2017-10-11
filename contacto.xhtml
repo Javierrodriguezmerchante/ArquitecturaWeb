@@ -6,28 +6,51 @@
 </head>
 <body>
 	<h1>CONTÁCTANOS</h1>
-	<form name="formulario" method=POST action="mailto:usuario@yahoo.es">
+	
       <table>
       	<tr height="50"></tr>
       	<tr>
       		<th width="100"></th>
-      		<th>
-		        <LABEL for="firstname">Nombre:* </LABEL>
-		                  <INPUT type="text" id="firstname"><BR><BR>
-		        <LABEL for="lastname">Apellido:* </LABEL>
-		                  <INPUT type="text" id="lastname"><BR><BR>
-		        <LABEL for="email">Email:* </LABEL>
-		                  <INPUT type="text" id="email"><BR><BR>
-		        <INPUT type="radio" name="sex" value="Male">Masculino<BR>
-		        <INPUT type="radio" name="sex" value="Female">Femenino<BR><BR>
-		        <LABEL for="textArea">Escribir: </LABEL><BR>
-		        <TEXTAREA rows="6" cols="30" id="textArea"></TEXTAREA><BR><BR>
-		        <INPUT type="submit" value="ENVIAR"> <INPUT type="reset">
-	    	</th>
+      		<td>
+			<form action="../../form-result.php" target="_blank">
+				
+				<table>
+
+			     <caption></caption>
+			     <tbody>
+
+				    <tr>
+					  <td>&nbsp;Nombre:&nbsp;</td>
+					  <td><input name="destino" type="text" /></td>
+					</tr>
+			        
+			        <tr>
+					  <td>&nbsp;Apellido:&nbsp;</td>
+					  <td><input name="destino" type="text" /></td>
+					</tr>
+
+			        <tr>
+					  <td>&nbsp;E-Mail:&nbsp;</td>
+					  <td><input name="destino" type="text" /></td>
+					</tr>
+					<br></br><br></br>
+			        <tr>
+			        	<td>&nbsp;Escribir:&nbsp;</td>
+			        </tr>
+			        <tr>
+			        	<td><p><textarea name="mensaje" rows="15" cols="25"></textarea></p></td>
+			        </tr>
+			 		<input type="submit" value="Enviar"/>
+			  </tbody>
+        
+        </table>
+				
+		</form>
+	    	</td>
 	    	<th width="200"></th>
-	    	<th style="text-align: center">
+	    	<th>
 	    		<h3>DIRECCIÓN</h3>
-	    		<p style="text-align: left">Campus Universitario, Ctra. Madrid-Barcelona, Km. 33,600, <br>28805 <br>Alcalá de Henares <br> Madrid</p>
+	    		<p style="text-align: left">Campus Universitario, Ctra. Madrid-Barcelona, Km. 33,600, <br></br>28805 <br></br>Alcalá de Henares <br></br> Madrid</p>
 	    		<h3>TELÉFONO</h3>
 	    		<p style="text-align: left">918 85 65 05</p>
 	    		<h3>E-MAIL</h3>
@@ -35,18 +58,17 @@
 	    	</th>
         </tr>
        </table>
-       <br><br>
-       <table>
-       		<tr>
-       			<th width="450"></th>
-       			<th>
-			       <a href="https://www.google.es/maps/place/Escuela+Polit%C3%A9cnica+Superior+-+UAH/@40.5130335,-3.3487276,15z/data=!4m5!3m4!1s0x0:0x667509a1add2eac7!8m2!3d40.5130335!4d-3.3487276">
-			       		<img src="img/mapa.png" height="316,4" width="627,2" />
-			       </a>
-			    </th>
-			</tr>
-       </table>
-     </FORM>
-   </BODY>
+    
+    <br></br><br></br>
+    <table>
+   		<tr>
+   			<th width="450"></th>
+   			<th>
+		       <a href="https://www.google.es/maps/place/Escuela+Polit%C3%A9cnica+Superior+-+UAH/@40.5130335,-3.3487276,15z/data=!4m5!3m4!1s0x0:0x667509a1add2eac7!8m2!3d40.5130335!4d-3.3487276">
+		       		<img src="img/mapa.png" height="316,4" width="627,2" />
+		       </a>
+		    </th>
+		</tr>
+    </table>
 </body>
 </html>
