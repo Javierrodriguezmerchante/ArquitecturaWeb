@@ -17,32 +17,6 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-                <script>
-            function fecha(f) {
-                int año = f.substring(7,11);
-                if (f < 1939 || f > 80) {
-                    alert("Los valores han de estar comprendidos entre 40 y 80");
-                    location.reload(true);
-                }
-
-            }
-
-            function longitud(val) {
-                if (val < 3000 || val > 9000) {
-                    alert("Los valores han de estar comprendidos entre 3.000 y 9.000");
-                    location.reload(true);
-                }
-
-            }
-
-            function curva(val) {
-                if (val < 6 || val > 20) {
-                    alert("Los valores han de estar comprendidos entre 6 y 20");
-                    location.reload(true);
-                }
-
-            }
-        </script>
     </head>
    <body>
 		<!-- Wrapper -->
