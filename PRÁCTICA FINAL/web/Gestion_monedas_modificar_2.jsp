@@ -72,28 +72,31 @@
                                                                                         <div class="6u 12u$(xsmall)">
 												<input type="text" id="valor" value="valor que haya en la base de datos(valor)" placeholder="Valor" required/>
 											</div>
-                                                                                        <div class="6u 12u$(xsmall)">
-												<input type="text" id="anno" value="valor que haya en la base de datos(año)" placeholder="Año" required/>
-											</div>
+                                                                                        
                                                                                         <div class="6u 12u$(xsmall)">
 												<input type="text" id="estrellas" value="valor que haya en la base de datos(estrellas)" placeholder="Estrellas" required/>
 											</div>
                                                                                         <div class="6u 12u$(xsmall)">
 												<input type="text" id="lugar" value="valor que haya en la base de datos(lugar)" placeholder="Lugar de Emisión" required/>
 											</div>
-                                                                                        <div class="6u 12u$(xsmall)">
-												<input type="text" id="precio" value="valor que haya en la base de datos(precio)" placeholder="Precio" required/>
-											</div>
+                                                                                        
                                                                                         <div class="12u$">
 												<div class="select-wrapper">
 													<select name="demo-category" id="demo-category" required>
-														<option value="">Elija un estado</option>
 														<option value="BC">Buena conservación</option>
 														<option value="MBC">Muy Buena conservación</option>
 														<option value="EBC">Excelente buena conservacion</option>
 														<option value="SC">Sin circular</option>
 													</select>
 												</div>
+											</div>
+                                                                                        <div class="6u 12u$(xsmall)">
+                                                                                            <label>Introduce un año (1939-1975)</label>
+												<input style="border:0" type="number" id="fecha" value="" placeholder="Fecha" min="1939" max="1975" required/>
+											</div>
+                                                                                        <div class="6u 12u$(xsmall)">
+                                                                                            <label>Introduce un precio</label>
+												<input style="border:0" type="number" id="precio" value="" placeholder="Precio" min="0.00" max="10000.00" step="0.01" required/>
 											</div>
 
                                                                                         
