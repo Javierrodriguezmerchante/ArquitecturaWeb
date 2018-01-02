@@ -72,6 +72,7 @@
                                                                                 <div class="12u$">
 												<ul class="actions">
 													<li><input type="submit" value="Modificar Billete" class="special" /></li>
+                                                                                                        <li><a href="Gestion_billetes.jsp" class="special">Volver</a></li>
 												</ul>
 										</div>
 									</form>

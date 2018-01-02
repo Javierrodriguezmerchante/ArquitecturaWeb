@@ -1,5 +1,5 @@
 <%-- 
-    Document   : Gestion_billetes_modificar_2
+    Document   : Gestion_billetes_insertar
     Created on : 29-dic-2017, 14:43:19
     Author     : javier
 --%>
@@ -65,19 +65,16 @@
 									<h2>Rellena todos los campos para modificar el billete cuyo lote has introducido</h2>
 									<form method="post" action="#">
 										<div class="row uniform">
-											<div class="6u 12u$(xsmall)">
-												<input type="text" id="lote" value="valor que haya en la base de datos(lote)" placeholder="Lote" required/>
+                                                                                        <div class="6u 12u$(xsmall)">
+												<input type="text" id="valor" value="" placeholder="Valor" required/>
 											</div>
                                                                                         <div class="6u 12u$(xsmall)">
-												<input type="text" id="valor" value="valor que haya en la base de datos(valor)" placeholder="Valor" required/>
+												<input type="text" id="lugar" value="" placeholder="Lugar de Emisión" required/>
 											</div>
                                                                                         <div class="6u 12u$(xsmall)">
-												<input type="text" id="lugar" value="valor que haya en la base de datos(lugar)" placeholder="Lugar de Emisión" required/>
+												<input type="text" id="serie" value="" placeholder="Serie" required/>
 											</div>
                                                                                         <div class="6u 12u$(xsmall)">
-												<input type="text" id="serie" value="valor que haya en la base de datos(serie)" placeholder="Serie" required/>
-											</div>
-                                                                                        <div class="12u$">
 												<div class="select-wrapper">
 													<select name="demo-category" id="demo-category" required>
 														<option value="BC">Buena conservación</option>
@@ -95,10 +92,14 @@
                                                                                             <label>Introduce un precio</label>
 												<input style="border:0" type="number" id="precio" value="" placeholder="Precio" min="0.00" max="10000.00" step="0.01" required/>
 											</div>
-                                                                                        
+                                                                                        <div class="6u 12u$">
+                                                                                         <label>Introduce una foto del billete</label>
+                                                                                        <input type="file" name="dataFile" id="fileChooser" required>
+                                                                                     </div>
 											<div class="12u$">
 												<ul class="actions">
 													<li><input type="submit" value="Modificar billete" class="special" /></li>
+                                                                                                        <li><a href="Gestion_billetes_modificar_1.jsp" class="special">Volver</a></li>
 												</ul>
 											</div>
 										</div>

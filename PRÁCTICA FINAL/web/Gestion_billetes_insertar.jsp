@@ -17,6 +17,7 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+                
     </head>
    <body>
 		<!-- Wrapper -->
@@ -66,9 +67,6 @@
 									<h2>Rellena todos los campos para registrar un billete</h2>
 									<form method="post" action="#">
 										<div class="row uniform">
-											<div class="6u 12u$(xsmall)">
-												<input type="text" id="lote" value="" placeholder="Lote" required/>
-											</div>
                                                                                         <div class="6u 12u$(xsmall)">
 												<input type="text" id="valor" value="" placeholder="Valor" required/>
 											</div>
@@ -78,7 +76,7 @@
                                                                                         <div class="6u 12u$(xsmall)">
 												<input type="text" id="serie" value="" placeholder="Serie" required/>
 											</div>
-                                                                                        <div class="6u 12u$">
+                                                                                        <div class="6u 12u$(xsmall)">
 												<div class="select-wrapper">
 													<select name="demo-category" id="demo-category" required>
 														<option value="BC">Buena conservación</option>
@@ -96,11 +94,14 @@
                                                                                             <label>Introduce un precio</label>
 												<input style="border:0" type="number" id="precio" value="" placeholder="Precio" min="0.00" max="10000.00" step="0.01" required/>
 											</div>
-                                                                                        
+                                                                                        <div class="6u 12u$">
+                                                                                         <label>Introduce una foto del billete</label>
+                                                                                        <input type="file" name="dataFile" id="fileChooser" required>
+                                                                                     </div>
 											<div class="12u$">
 												<ul class="actions">
 													<li><input type="submit" value="Registrar billete" class="special" /></li>
-													<li><input type="reset" value="Limpiar formulario" /></li>
+                                                                                                        <li><a href="Gestion_billetes.jsp" class="special">Volver</a></li>
 												</ul>
 											</div>
 										</div>

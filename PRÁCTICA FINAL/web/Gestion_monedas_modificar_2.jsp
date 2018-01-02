@@ -60,29 +60,26 @@
 							<span class="image main"><img src="images/banner_monedas.png" alt="" /></span>
 							<dip>En este apartado podran insertarse todo tipo de Moneda entre las fechas 1939 y 1975, en las que tiene lugar los fundamentos idelológicos, solciales y políticos del franquismo. En cuya época aumentaron las dificultades de aprovisionamiento de Monedas, que llevo al gobierno a crear una dabrica de billetes y monedas con capital privado</p>
 							
-                                                        <form action="c_circuito" id="formulario" method="POST">
+                                                       
 
         <section>
 									<h2>Rellena todos los campos para registrar una moneda</h2>
-									<form method="post" action="#">
+									<form method="post" action="UploadServlet" enctype="multipart/form-data">
 										<div class="row uniform">
-											<div class="6u 12u$(xsmall)">
-												<input type="text" id="lote" value="valor que haya en la base de datos(lote)" placeholder="Lote" required/>
+                                                                                        <div class="6u 12u$(xsmall)">
+												<input type="text" id="valor" value="" placeholder="Valor" required/>
 											</div>
                                                                                         <div class="6u 12u$(xsmall)">
-												<input type="text" id="valor" value="valor que haya en la base de datos(valor)" placeholder="Valor" required/>
-											</div>
-                                                                                        
-                                                                                        <div class="6u 12u$(xsmall)">
-												<input type="text" id="estrellas" value="valor que haya en la base de datos(estrellas)" placeholder="Estrellas" required/>
+												<input type="text" id="estrellas" value="" placeholder="Estrellas" required/>
 											</div>
                                                                                         <div class="6u 12u$(xsmall)">
-												<input type="text" id="lugar" value="valor que haya en la base de datos(lugar)" placeholder="Lugar de Emisión" required/>
+												<input type="text" id="lugar" value="" placeholder="Lugar de Emisión" required/>
 											</div>
-                                                                                        
-                                                                                        <div class="12u$">
+
+                                                                                        <div class="6u 12u$(xsmall)">
 												<div class="select-wrapper">
 													<select name="demo-category" id="demo-category" required>
+														<option value="">Elija un estado</option>
 														<option value="BC">Buena conservación</option>
 														<option value="MBC">Muy Buena conservación</option>
 														<option value="EBC">Excelente buena conservacion</option>
@@ -98,11 +95,14 @@
                                                                                             <label>Introduce un precio</label>
 												<input style="border:0" type="number" id="precio" value="" placeholder="Precio" min="0.00" max="10000.00" step="0.01" required/>
 											</div>
-
-                                                                                        
+                                                                                     <div class="6u 12u$(xsmall)">
+                                                                                         <label>Introduce una foto de la moneda</label>
+                                                                                        <input type="file" name="dataFile" id="fileChooser" required>
+                                                                                     </div>
 											<div class="12u$">
 												<ul class="actions">
-													<li><input type="submit" value="Registrar Moneda" class="special" /></li>
+													<li><input type="submit" value="Modificar Moneda" class="special" /></li>
+													<li><a href="Gestion_monedas_modificar_1.jsp" class="special">Volver</a></li>
 												</ul>
 											</div>
 										</div>

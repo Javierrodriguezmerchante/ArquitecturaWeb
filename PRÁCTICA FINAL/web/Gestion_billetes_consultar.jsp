@@ -100,6 +100,11 @@
                                                                                             --%>
 											</tbody>
 										</table>
+                                                                                <div class="12u$">
+												<ul class="actions">
+                                                                                                        <li><a href="Gestion_billetes.jsp" class="special">Volver</a></li>
+												</ul>
+										</div>
 									</div>
 								</section>
                                                 </div>

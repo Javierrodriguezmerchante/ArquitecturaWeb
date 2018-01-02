@@ -72,6 +72,7 @@
                                                                                 <div class="12u$">
 												<ul class="actions">
 													<li><input type="submit" value="Eliminar Moneda" class="special" /></li>
+                                                                                                        <li><a href="Gestion_monedas.jsp" class="special">Volver</a></li>
 												</ul>
 										</div>
 									</form>

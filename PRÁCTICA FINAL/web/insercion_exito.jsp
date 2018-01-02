@@ -1,6 +1,6 @@
 <%-- 
-    Document   : Gestion_billetes_insertar
-    Created on : 29-dic-2017, 14:43:19
+    Document   : insercion_exito
+    Created on : 02-ene-2018, 20:15:04
     Author     : javier
 --%>
 
@@ -56,24 +56,17 @@
                                 <!-- Main -->
 					<div id="main">
 						<div class="inner">
-							<h1>Modificación de monedas</h1>
-							<span class="image main"><img src="images/banner_monedas.png" alt="" /></span>
-													
-                                                        <form action="c_circuito" id="formulario" method="POST">
-
-        <section>
-									<h2>Introduce el número del lote para modificar una moneda</h2>
-									<form method="post" action="#">
-										<div class="row uniform">
-											<div class="6u 12u$">
-												<input type="text" id="Lote" value="" placeholder="Lote" required/>
-											</div>
-										</div>
-                                                                                <div class="12u$">
+							<h1 align="center">Enorabuena!!</h1>
+                                                                <section>
+									<h2 align="center">El elemento introducio, se ha registrado con exito!!</h2>
+                                                                        <div align="center"><img style="vertical-align:middle" src="images/exito.png" alt="" /></div>
+                                                                        
+											<div align="center" class="12u$">
 												<ul class="actions">
-													<li><input type="submit" value="Moddificar moneda" class="special" /></li>
-                                                                                                        <li><a href="Gestion_monedas.jsp" class="special">Volver</a></li>
+													
+                                                                                                        <li><a href="inicio_admin.jsp" class="special">Volver</a></li>
 												</ul>
+											</div>
 										</div>
 									</form>
 								</section>
